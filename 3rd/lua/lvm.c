@@ -1117,7 +1117,7 @@ void luaV_execute (lua_State *L) {
         }
         vmbreak;
       }
-      vmcase(OP_CALL) {
+      vmcase(OP_CALL) { // call function by tufei
         int b = GETARG_B(i);
         int nresults = GETARG_C(i) - 1;
         lua_checksig(L);

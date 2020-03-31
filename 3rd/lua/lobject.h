@@ -109,7 +109,7 @@ typedef union Value {
 
 #define TValuefields	Value value_; int tt_
 
-
+/* store value info and base type info in tt_ by tufei*/
 typedef struct lua_TValue {
   TValuefields;
 } TValue;
